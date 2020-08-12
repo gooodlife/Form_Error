@@ -1,0 +1,9 @@
+ postData("https://floating-shelf-00762.herokuapp.com/", { ...this.state })
+        .then(data => {
+            console.log(`
+      ---SUBMITTING---
+      First Name ${this.state.firstName}
+      Last Name ${this.state.lastName}
+      Email ${this.state.email}
+      password ${this.state.password}
+      `);
