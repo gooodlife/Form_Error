@@ -3,7 +3,7 @@ import footage from "./video/footage.mp4";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-const emailRegex = RegExp(/\S+@\S+\.\S+/);
+const emailRegex = RegExp(/\S+@()+\.\S+/);
 
 async function postData(url = "", data = {}) {
   // Default options are marked with *
@@ -107,7 +107,7 @@ export default class App extends Component {
         <nav id="bar" className="navbar">
           <li className="nav-item   ">
             <a className="nav-link " href="#" id="raisley">
-              RAISLEY
+              RAISELY
             </a>
           </li>
           <li className="nav-item col-2 ">
