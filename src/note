@@ -7,3 +7,5 @@
       Email ${this.state.email}
       password ${this.state.password}
       `);
+      the for each() method only calls afunction does"nt return anything so it returns the correct result in it"s own  local scope so it is unseen that is why no errrors are thrown ,but if a map() method is used it returns in the local scope and aggregates 
+the objects into an array which is the solution to this problem.  

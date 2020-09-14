@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import footage from "./video/footage.mp4";
+import waterfall from "./video/waterfall.mp4";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -101,23 +101,23 @@ export default class App extends Component {
     const { formErrors } = this.state;
     return (
       <section>
-        {/* <video id ="vid" autoPlay loop muted>
-        <source src ={footage} type ="video/mp4"/>
-      </video> */}
+        <video id="vid" autoPlay loop muted>
+          <source src={waterfall} type="video/mp4" />
+        </video>
         <nav id="bar" className="navbar">
           <li className="nav-item   ">
             <a className="nav-link " href="#" id="raisley">
-              RAISELY
+              Home
             </a>
           </li>
           <li className="nav-item col-2 ">
             <a className="nav-link" href="#">
-              ABOUT 
+              ABOUT
             </a>
           </li>
           <li className="nav-item col-2 ">
             <a className="nav-link" href="#">
-              CONTACT 
+              CONTACT
             </a>
           </li>
           <li
@@ -137,13 +137,12 @@ export default class App extends Component {
             </a>
           </li>
         </nav>
-       
+
         <form
-        
           className="form container bg-primary"
           onSubmit={this.handleSubmit}
         >
-           <h4 className="header container-fluid"> REGISTER HERE </h4>
+          <h4 className="header container-fluid"> REGISTER HERE </h4>
           <div
             id="detail"
             className="form-group  py-4 "
@@ -158,7 +157,7 @@ export default class App extends Component {
               placeholder="firstname"
               onChange={this.handleChange}
             />
-
+            <br />
             {formErrors.firstName.length > 0 && (
               <span className="errormessage">{formErrors.firstName}</span>
             )}
@@ -171,7 +170,7 @@ export default class App extends Component {
               placeholder="lastname"
               onChange={this.handleChange}
             />
-
+            <br />
             {formErrors.lastName.length > 0 && (
               <span className="errormessage">{formErrors.lastName}</span>
             )}
@@ -187,7 +186,7 @@ export default class App extends Component {
               placeholder="email"
               onChange={this.handleChange}
             />
-
+            <br />
             {formErrors.email.length > 0 && (
               <span className="errormessage">{formErrors.email}</span>
             )}
@@ -200,7 +199,7 @@ export default class App extends Component {
               placeholder="password"
               onChange={this.handleChange}
             />
-
+            <br />
             {formErrors.password.length > 0 && (
               <span className="errormessage">{formErrors.password}</span>
             )}
